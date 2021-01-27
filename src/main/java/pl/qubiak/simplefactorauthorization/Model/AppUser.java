@@ -19,6 +19,7 @@ public class AppUser implements UserDetails {
     private Long id;
     private String username;
     private String password;
+    private String mail;
     private String role;
     private boolean isEnabled;
 
@@ -83,6 +84,14 @@ public class AppUser implements UserDetails {
     @Override
     public boolean isEnabled() {
         return isEnabled;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
     @Override

@@ -15,7 +15,6 @@ public class Start {
         appUserJanusz.setRole("ROLE_ADMIN");
         appUserJanusz.setEnabled(true);
 
-
         AppUser appUserBogdan = new AppUser();
         appUserBogdan.setUsername("Bogdan");
         appUserBogdan.setPassword(passwordEncoder.encode("Bogdan123"));
@@ -24,9 +23,5 @@ public class Start {
 
         appUserRepo.save(appUserJanusz);
         appUserRepo.save(appUserBogdan);
-
-
-
     }
-
 }
