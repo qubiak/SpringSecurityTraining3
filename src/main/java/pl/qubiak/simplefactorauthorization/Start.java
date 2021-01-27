@@ -13,18 +13,20 @@ public class Start {
         appUserJanusz.setUsername("Janusz");
         appUserJanusz.setPassword(passwordEncoder.encode("Janusz123"));
         appUserJanusz.setRole("ROLE_ADMIN");
-        //appUserJanusz.setEnabled(true);
+        appUserJanusz.setEnabled(true);
 
 
         AppUser appUserBogdan = new AppUser();
         appUserBogdan.setUsername("Bogdan");
         appUserBogdan.setPassword(passwordEncoder.encode("Bogdan123"));
         appUserBogdan.setRole("ROLE_USER");
-        //appUserBogdan.setEnabled(true);
+        appUserBogdan.setEnabled(true);
 
         appUserRepo.save(appUserJanusz);
         appUserRepo.save(appUserBogdan);
 
 
+
     }
+
 }

@@ -7,7 +7,8 @@ import pl.qubiak.simplefactorauthorization.Model.AppUser;
 import java.util.Optional;
 
 @Repository
-public interface AppUserRepo extends JpaRepository<AppUser,Long> {
+public interface AppUserRepo extends JpaRepository<AppUser, Long> {
 
     Optional<AppUser> findByUsername(String username);
+
 }
